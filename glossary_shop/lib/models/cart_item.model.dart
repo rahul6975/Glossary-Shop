@@ -10,8 +10,10 @@ class CartItemModel {
     this.quantity = quantity;
   }
 
-  Rx<ProductModel> _product = Rx<ProductModel>(ProductModel(
-      id: 0, category: "", description: "", price: 0.0, image: "", name: ""));
+  Rx<ProductModel> _product = Rx<ProductModel>(
+    ProductModel(
+        id: 0, category: "", description: "", price: 0.0, image: "", name: ""),
+  );
 
   set product(ProductModel value) => _product.value = value;
 
