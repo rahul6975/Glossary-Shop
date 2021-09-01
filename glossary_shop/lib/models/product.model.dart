@@ -61,6 +61,6 @@ class ProductModel {
   bool get like => _like.value;
 
   String get dollar {
-    return "U\$ " + this.price.toStringAsFixed(2);
+    return "₹ " + this.price.toStringAsFixed(2);
   }
 }

@@ -2,12 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:glossary_shop/utils/colors.dart';
 
 class OrganicButton extends StatelessWidget {
-
   final Function action;
   final String label;
   final IconData icon;
-  OrganicButton(this.action, this.label, this.icon);
 
+  OrganicButton(this.action, this.label, this.icon);
 
   void getFunc() {
     action;

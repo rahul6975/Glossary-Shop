@@ -8,7 +8,6 @@ class CustomAppBarAction extends StatelessWidget {
 
   CustomAppBarAction(this.action, this.icon, {required this.quantity});
 
-
   void getFunc() {
     action;
   }
@@ -45,8 +44,9 @@ class CustomAppBarAction extends StatelessWidget {
                     height: 15,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
-                        color: AppColors.DARK,
-                        borderRadius: BorderRadius.circular(15)),
+                      color: AppColors.DARK,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
                     child: Text(
                       quantity.toString() ?? "",
                       style: TextStyle(
