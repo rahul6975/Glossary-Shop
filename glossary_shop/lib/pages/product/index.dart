@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:get/get.dart';
+import 'package:glossary_shop/utils/colors.dart';
+import 'package:glossary_shop/widgets/appbar_action.dart';
+import 'package:glossary_shop/widgets/custom_appbar.dart';
+import 'package:glossary_shop/widgets/product_image.dart';
 import 'controller.dart';
 import 'widgets/product_details.dart';
 
@@ -18,6 +22,7 @@ class Product extends StatelessWidget {
               CustomAppBarAction(
                 () => Get.back(),
                 Feather.arrow_left,
+                quantity: controller.appController.cartItems.length,
               )
             ],
           ),
@@ -28,9 +33,10 @@ class Product extends StatelessWidget {
               children: <Widget>[
                 Obx(
                   () => ProductImage(
-                    controller?.product?.image,
+                    controller.product.image,
                     height: Get.width - 50,
                     padding: 25,
+                    width: 0,
                   ),
                 ),
               ],

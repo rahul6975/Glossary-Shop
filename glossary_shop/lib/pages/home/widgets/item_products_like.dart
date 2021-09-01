@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:get/get.dart';
 import 'package:glossary_shop/models/product.model.dart';
+import 'package:glossary_shop/utils/colors.dart';
 
 class ItemLike extends StatelessWidget {
   final ProductModel product;

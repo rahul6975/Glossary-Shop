@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:get/get.dart';
 import 'package:glossary_shop/models/cart_item.model.dart';
+import 'package:glossary_shop/utils/colors.dart';
+import 'package:glossary_shop/widgets/product_image.dart';
 
 import '../controller.dart';
 import 'cart_item_button.dart';
@@ -9,6 +11,7 @@ import 'cart_item_button.dart';
 class CartItem extends StatelessWidget {
   final CartController cartController = Get.find();
   final CartItemModel cartItem;
+
   CartItem(this.cartItem);
 
   @override
@@ -21,6 +24,7 @@ class CartItem extends StatelessWidget {
           this.cartItem.product.image,
           height: 80,
           width: 80,
+          padding: 0.0,
         ),
         SizedBox(width: 15),
         Expanded(
@@ -69,7 +73,8 @@ class CartItem extends StatelessWidget {
             SizedBox(width: 10),
             CartItemButton(Feather.plus, this.cartItem.incrementQuantity),
             SizedBox(width: 10),
-            CartItemButton(Feather.trash, () => cartController.deleteItem(this.cartItem)),
+            CartItemButton(
+                Feather.trash, () => cartController.deleteItem(this.cartItem)),
           ],
         )
       ],

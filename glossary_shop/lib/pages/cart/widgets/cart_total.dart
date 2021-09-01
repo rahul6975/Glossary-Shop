@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:get/get.dart';
+import 'package:glossary_shop/utils/colors.dart';
+import 'package:glossary_shop/widgets/organic_button.dart';
 
 import '../controller.dart';
 

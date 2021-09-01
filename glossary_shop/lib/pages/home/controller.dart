@@ -1,15 +1,18 @@
-import 'package:flutter_getx_concept/models/category.model.dart';
 import 'package:get/get.dart';
 import 'package:get/state_manager.dart';
-import 'package:flutter_getx_concept/controller.dart';
-import 'package:flutter_getx_concept/models/product.model.dart';
-import 'package:flutter_getx_concept/utils/json.dart';
+import 'package:glossary_shop/models/category.model.dart';
+import 'package:glossary_shop/models/product.model.dart';
+import 'package:glossary_shop/utils/json.dart';
+
+import '../../controller.dart';
 
 class HomeController extends GetxController {
   AppController appController = Get.find();
   RxList<CategoryModel> categories = RxList<CategoryModel>([]);
   RxList<ProductModel> products = RxList<ProductModel>([]);
-  Rx<CategoryModel> _selectedCategory = Rx<CategoryModel>();
+  Rx<CategoryModel> _selectedCategory =
+      Rx<CategoryModel>(CategoryModel(key: "", name: "", color: ""));
+
   CategoryModel get selectedCategory => _selectedCategory.value;
 
   int get cartQuantity {
@@ -48,6 +51,7 @@ class HomeController extends GetxController {
               category: product["category"],
               price: product["price"],
               image: product["image"],
+              description: product["description"],
             ))
         .toList();
   }

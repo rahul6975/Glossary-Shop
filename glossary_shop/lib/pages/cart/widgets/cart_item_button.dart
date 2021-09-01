@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:glossary_shop/utils/colors.dart';
 
 class CartItemButton extends StatelessWidget {
   final IconData icon;
   final Function action;
+
   CartItemButton(this.icon, this.action);
+
+  void getFunc() {
+    action;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +17,7 @@ class CartItemButton extends StatelessWidget {
       width: 32,
       height: 32,
       child: FlatButton(
-        onPressed: action,
+        onPressed: getFunc,
         color: AppColors.WHITE,
         padding: EdgeInsets.zero,
         shape: RoundedRectangleBorder(

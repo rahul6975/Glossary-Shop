@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:glossary_shop/models/category.model.dart';
+import 'package:glossary_shop/utils/colors.dart';
 
 import '../controller.dart';
 

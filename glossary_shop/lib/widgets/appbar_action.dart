@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_concept/utils/colors.dart';
+import 'package:glossary_shop/utils/colors.dart';
 
 class CustomAppBarAction extends StatelessWidget {
   final Function action;
   final IconData icon;
   final int quantity;
 
-  CustomAppBarAction(this.action, this.icon, {this.quantity});
+  CustomAppBarAction(this.action, this.icon, {required this.quantity});
+
+
+  void getFunc() {
+    action;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +21,7 @@ class CustomAppBarAction extends StatelessWidget {
         width: 50,
         height: 50,
         child: FlatButton(
-          onPressed: action,
+          onPressed: getFunc,
           padding: EdgeInsets.zero,
           color: AppColors.WHITE,
           shape: RoundedRectangleBorder(

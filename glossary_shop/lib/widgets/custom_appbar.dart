@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_getx_concept/utils/colors.dart';
+import 'package:glossary_shop/utils/colors.dart';
 
 class CustomAppBar extends PreferredSize {
   final String title;
@@ -13,7 +13,7 @@ class CustomAppBar extends PreferredSize {
     this.leadings = const [],
     this.actions = const [],
     this.height = 120,
-  });
+  }) : super(preferredSize: Size(0, 0), child: Text(""));
 
   @override
   Size get preferredSize => Size.fromHeight(height);

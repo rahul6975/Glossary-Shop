@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_concept/widgets/custom_appbar.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:get/get.dart';
-import 'package:flutter_getx_concept/pages/home/controller.dart';
-import 'package:flutter_getx_concept/utils/colors.dart';
-import 'package:flutter_getx_concept/widgets/appbar_action.dart';
+import 'package:glossary_shop/utils/colors.dart';
+import 'package:glossary_shop/widgets/appbar_action.dart';
+import 'package:glossary_shop/widgets/custom_appbar.dart';
+import 'controller.dart';
 import 'widgets/list_products.dart';
 import 'widgets/list_categories.dart';
 

@@ -2,13 +2,17 @@ import 'package:get/get.dart';
 import 'package:get/state_manager.dart';
 import 'package:glossary_shop/models/cart_item.model.dart';
 import 'package:glossary_shop/models/product.model.dart';
+import 'package:glossary_shop/utils/json.dart';
 
 import '../../controller.dart';
 
 class ProductController extends GetxController {
   AppController appController = Get.find();
-  Rx<ProductModel> _product = Rx<ProductModel>();
+  Rx<ProductModel> _product = Rx<ProductModel>(ProductModel(
+      id: 0, name: "", category: "", price: 0.0, image: "", description: ""));
+
   setProduct(ProductModel value) => _product.value = value;
+
   ProductModel get product {
     return _product.value;
   }

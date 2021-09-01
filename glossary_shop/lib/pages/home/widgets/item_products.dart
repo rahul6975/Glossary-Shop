@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:glossary_shop/models/product.model.dart';
+import 'package:glossary_shop/utils/colors.dart';
+import 'package:glossary_shop/widgets/product_image.dart';
 
 import 'item_products_add.dart';
 import 'item_products_like.dart';
@@ -41,7 +43,7 @@ class ListItem extends StatelessWidget {
                 ProductImage(
                   this.product.image,
                   width: 115,
-                  height: 115,
+                  height: 115, padding: 0,
                 ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
