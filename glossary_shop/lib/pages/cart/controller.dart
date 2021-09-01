@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_concept/utils/colors.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:get/get.dart';
 import 'package:get/state_manager.dart';
-import 'package:flutter_getx_concept/controller.dart';
-import 'package:flutter_getx_concept/models/cart_item.model.dart';
+
+import '../../controller.dart';
 
 class CartController extends GetxController {
   AppController appController = Get.find();

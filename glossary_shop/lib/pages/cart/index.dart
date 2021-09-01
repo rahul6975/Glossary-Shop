@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_concept/widgets/appbar_action.dart';
-import 'package:flutter_getx_concept/widgets/custom_appbar.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:get/get.dart';
 import 'package:get/state_manager.dart';
-import 'package:flutter_getx_concept/pages/cart/controller.dart';
-import 'package:flutter_getx_concept/utils/colors.dart';
+import 'controller.dart';
 import 'widgets/cart_list.dart';
 import 'widgets/cart_total.dart';
 
