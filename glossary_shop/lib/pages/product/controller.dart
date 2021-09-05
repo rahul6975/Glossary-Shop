@@ -48,10 +48,12 @@ class ProductController extends GetxController {
       });
       cartItem.incrementQuantity();
     } catch (error) {
-      appController.cartItems.add(CartItemModel(
-        product: this.product,
-        quantity: 1,
-      ));
+      appController.cartItems.add(
+        CartItemModel(
+          product: this.product,
+          quantity: 1,
+        ),
+      );
     }
     Get.back();
   }

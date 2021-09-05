@@ -45,7 +45,7 @@ class ProductDetails extends StatelessWidget {
                 children: <Widget>[
                   Obx(
                     () => Text(
-                      controller.product?.name ?? "",
+                      controller.product.name ?? "",
                       style: TextStyle(
                         fontSize: 32,
                         color: AppColors.DARK,
@@ -56,7 +56,7 @@ class ProductDetails extends StatelessWidget {
                   SizedBox(height: 15),
                   Obx(
                     () => Text(
-                      controller.product?.description ?? "",
+                      controller.product.description ?? "",
                       style: TextStyle(
                         fontSize: 14,
                         color: AppColors.DARK,
@@ -71,7 +71,7 @@ class ProductDetails extends StatelessWidget {
               children: <Widget>[
                 Expanded(
                   child: Text(
-                    this.product?.dollar ?? "0",
+                    this.product.dollar ?? "0",
                     style: TextStyle(
                       fontSize: 32,
                       color: AppColors.LIGHT_GREEN,
