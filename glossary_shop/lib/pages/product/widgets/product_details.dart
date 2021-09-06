@@ -22,7 +22,7 @@ class ProductDetails extends StatelessWidget {
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(25),
           topRight: Radius.circular(25),
-        ),        
+        ),
       ),
       child: SafeArea(
         child: Column(
@@ -45,7 +45,8 @@ class ProductDetails extends StatelessWidget {
                 children: <Widget>[
                   Obx(
                     () => Text(
-                      controller.product.name ?? "",
+                      controller.product.name,
+                      // "hello",
                       style: TextStyle(
                         fontSize: 32,
                         color: AppColors.DARK,
@@ -56,7 +57,7 @@ class ProductDetails extends StatelessWidget {
                   SizedBox(height: 15),
                   Obx(
                     () => Text(
-                      controller.product.description ?? "",
+                      controller.product.description,
                       style: TextStyle(
                         fontSize: 14,
                         color: AppColors.DARK,
@@ -71,7 +72,7 @@ class ProductDetails extends StatelessWidget {
               children: <Widget>[
                 Expanded(
                   child: Text(
-                    this.product.dollar ?? "0",
+                    this.product.dollar,
                     style: TextStyle(
                       fontSize: 32,
                       color: AppColors.LIGHT_GREEN,

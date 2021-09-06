@@ -9,7 +9,7 @@ import '../../controller.dart';
 class ProductController extends GetxController {
   AppController appController = Get.find();
   Rx<ProductModel> _product = Rx<ProductModel>(ProductModel(
-      id: 0, name: "", category: "", price: 0.0, image: "", description: ""));
+      price: 0.0, id: 0, name: "", image: "", description: "", category: ""));
 
   setProduct(ProductModel value) => _product.value = value;
 
