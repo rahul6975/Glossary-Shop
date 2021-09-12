@@ -8,7 +8,6 @@ class CustomAppBarAction extends StatelessWidget {
 
   CustomAppBarAction(this.action, this.icon, {required this.quantity});
 
-
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -21,7 +20,7 @@ class CustomAppBarAction extends StatelessWidget {
           padding: EdgeInsets.zero,
           color: AppColors.WHITE,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(8),
+            borderRadius: BorderRadius.circular(7.9),
           ),
           child: Stack(
             overflow: Overflow.visible,
@@ -41,8 +40,9 @@ class CustomAppBarAction extends StatelessWidget {
                     height: 15,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
-                        color: AppColors.DARK,
-                        borderRadius: BorderRadius.circular(15)),
+                      color: AppColors.DARK,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
                     child: Text(
                       quantity.toString(),
                       style: TextStyle(
