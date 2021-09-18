@@ -36,8 +36,8 @@ class CustomAppBarAction extends StatelessWidget {
                   top: -5,
                   right: -10,
                   child: Container(
-                    width: 15,
-                    height: 15,
+                    width: 16,
+                    height: 16,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                       color: AppColors.DARK,
