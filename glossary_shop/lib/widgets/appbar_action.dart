@@ -46,7 +46,7 @@ class CustomAppBarAction extends StatelessWidget {
                     child: Text(
                       quantity.toString(),
                       style: TextStyle(
-                        fontSize: 11,
+                        fontSize: 12,
                         color: AppColors.WHITE,
                         fontWeight: FontWeight.bold,
                       ),
