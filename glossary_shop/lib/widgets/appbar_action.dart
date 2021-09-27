@@ -14,7 +14,7 @@ class CustomAppBarAction extends StatelessWidget {
       padding: EdgeInsets.zero,
       child: SizedBox(
         width: 50,
-        height: 50,
+        height: 40,
         child: FlatButton(
           onPressed: action(),
           padding: EdgeInsets.zero,
